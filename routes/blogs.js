@@ -1,8 +1,8 @@
 import { Router } from "express";
-import * as BlogController from "../controller/BlogController.js";
+import * as BlogController from "../app/controller/BlogController.js";
 const router = Router();
 
-router.get( "/", BlogController.index );
-router.post( "/store", BlogController.store );
+router.get( "", BlogController.index );
+router.post( "", BlogController.store );
 
 export default router;
